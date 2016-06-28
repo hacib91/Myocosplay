@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		753848EC1D22799700247C1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753848EB1D22799700247C1F /* AppDelegate.swift */; };
+		753848EE1D22799700247C1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753848ED1D22799700247C1F /* ViewController.swift */; };
+		753848F11D22799700247C1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753848EF1D22799700247C1F /* Main.storyboard */; };
+		753848F31D22799700247C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753848F21D22799700247C1F /* Assets.xcassets */; };
+		753848F61D22799700247C1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753848F41D22799700247C1F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		753848E81D22799600247C1F /* Myo Cosplay Test api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myo Cosplay Test api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		753848EB1D22799700247C1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		753848ED1D22799700247C1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		753848F01D22799700247C1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		753848F21D22799700247C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		753848F51D22799700247C1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		753848F71D22799700247C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		753848E51D22799600247C1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		753848DF1D22799600247C1F = {
+			isa = PBXGroup;
+			children = (
+				753848EA1D22799700247C1F /* Myo Cosplay Test api */,
+				753848E91D22799600247C1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		753848E91D22799600247C1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				753848E81D22799600247C1F /* Myo Cosplay Test api.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		753848EA1D22799700247C1F /* Myo Cosplay Test api */ = {
+			isa = PBXGroup;
+			children = (
+				753848EB1D22799700247C1F /* AppDelegate.swift */,
+				753848ED1D22799700247C1F /* ViewController.swift */,
+				753848EF1D22799700247C1F /* Main.storyboard */,
+				753848F21D22799700247C1F /* Assets.xcassets */,
+				753848F41D22799700247C1F /* LaunchScreen.storyboard */,
+				753848F71D22799700247C1F /* Info.plist */,
+			);
+			path = "Myo Cosplay Test api";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		753848E71D22799600247C1F /* Myo Cosplay Test api */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753848FA1D22799700247C1F /* Build configuration list for PBXNativeTarget "Myo Cosplay Test api" */;
+			buildPhases = (
+				753848E41D22799600247C1F /* Sources */,
+				753848E51D22799600247C1F /* Frameworks */,
+				753848E61D22799600247C1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Myo Cosplay Test api";
+			productName = "Myo Cosplay Test api";
+			productReference = 753848E81D22799600247C1F /* Myo Cosplay Test api.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		753848E01D22799600247C1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "haseeb khalid";
+				TargetAttributes = {
+					753848E71D22799600247C1F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7SKKU5ZJ3S;
+					};
+				};
+			};
+			buildConfigurationList = 753848E31D22799600247C1F /* Build configuration list for PBXProject "Myo Cosplay Test api" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 753848DF1D22799600247C1F;
+			productRefGroup = 753848E91D22799600247C1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				753848E71D22799600247C1F /* Myo Cosplay Test api */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		753848E61D22799600247C1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753848F61D22799700247C1F /* LaunchScreen.storyboard in Resources */,
+				753848F31D22799700247C1F /* Assets.xcassets in Resources */,
+				753848F11D22799700247C1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		753848E41D22799600247C1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753848EE1D22799700247C1F /* ViewController.swift in Sources */,
+				753848EC1D22799700247C1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		753848EF1D22799700247C1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				753848F01D22799700247C1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		753848F41D22799700247C1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				753848F51D22799700247C1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		753848F81D22799700247C1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		753848F91D22799700247C1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		753848FB1D22799700247C1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Myo Cosplay Test api/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MYO.Myo-Cosplay-Test-api";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		753848FC1D22799700247C1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Myo Cosplay Test api/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MYO.Myo-Cosplay-Test-api";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		753848E31D22799600247C1F /* Build configuration list for PBXProject "Myo Cosplay Test api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753848F81D22799700247C1F /* Debug */,
+				753848F91D22799700247C1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753848FA1D22799700247C1F /* Build configuration list for PBXNativeTarget "Myo Cosplay Test api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753848FB1D22799700247C1F /* Debug */,
+				753848FC1D22799700247C1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 753848E01D22799600247C1F /* Project object */;
+}
