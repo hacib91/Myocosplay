@@ -33,7 +33,19 @@ class AddViewController: UIViewController {
     
     @IBAction func saveButton(_ sender: AnyObject) {
         
-        Alamofire.request("https://myocosplayeip.herokuapp.com/users",method: .post, parameters: ["login": self.textView.text!,"mdp": self.mdp.text!, "device": self.device.text!, "email": self.email.text!, "tel": self.tel.text!, "nom": self.nom.text!, "prenom": self.prenom.text!])
+        let myParam: Parameters = [
+            "login": self.textView.text!,
+            "mdp": self.mdp.text!,
+            "device": self.device.text!,
+            "email": self.email.text!,
+            "tel": self.tel.text!,
+            "nom": self.nom.text!,
+            "prenom": self.prenom.text!
+            
+        ]
+        Alamofire.request("https://myocosplayeip.herokuapp.com/users",method: .post, parameters: myParam, encoding: JSONEncoding.prettyPrinted)
+        
+       // Alamofire.request("https://myocosplayeip.herokuapp.com/users",method: .post, parameters: ["login": self.textView.text!,"mdp": self.mdp.text!, "device": self.device.text!, "email": self.email.text!, "tel": self.tel.text!, "nom": self.nom.text!, "prenom": self.prenom.text!])
         
         self.navigationController!.popViewController(animated: true)
         

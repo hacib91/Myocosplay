@@ -24,7 +24,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var testArray: [String] = []
     var IDArray: [Int] = []
     var imageArray = [UIImage]()
+
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
+    //creatAlert(title: "Test", message: "Working or not")
+    }
+    func creatAlert (title:String, message:String)
+    {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: {
+            (action) in alert.dismiss(animated: true, completion: nil)
+            print("YES")
+        }))
+        alert.addAction(UIAlertAction(title: "NO", style: UIAlertActionStyle.default, handler: {
+            (action) in alert.dismiss(animated: true, completion: nil)
+            print("NO")
+        }))
+        self.present(alert, animated:true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         imageArray = [#imageLiteral(resourceName: "slider1"),#imageLiteral(resourceName: "slider2")]

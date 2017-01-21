@@ -1,8 +1,8 @@
 //
-//  Evenement.swift
-//  Myo Cosplay Test api
+//  News.swift
+//  TodoApp
 //
-//  Created by haseeb khalid on 25/07/2016.
+//  Created by haseeb khalid on 09/07/2016.
 //  Copyright © 2016 haseeb khalid. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import Kingfisher
 
-struct postEvent {
+struct postNews {
     // let urlImage : URL!
     let mainImage : UIImage!
     let name : String!
@@ -18,30 +18,27 @@ struct postEvent {
     let contenu : String
 }
 
-class Evenement : UITableViewController, UISearchBarDelegate {
+class News : UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
-    var posts = [postEvent]()
-    var searchURL = "https://myocosplayeip.herokuapp.com/event"
+    var posts = [postNews]()
+    var searchURL = "https://myocosplayeip.herokuapp.com/actu"
     var searchNewURL = String()
     
     typealias JSONSTandard = [String : AnyObject]
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar, textDidChange searchText:String) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let keywords = searchBar.text
         
         let finalKeywords = keywords?.replacingOccurrences(of: " ", with: "%20")
         
         
-        searchNewURL = "https://myocosplayeip.herokuapp.com/event/titre/\(finalKeywords!)/"
+        searchNewURL = "https://myocosplayeip.herokuapp.com/actu/titre/\(finalKeywords!)/"
         callAlamo(url: searchNewURL)
         self.view.endEditing(true)
         self.tableView.reloadData()
-        
-     //   if searchText.isEmpty == true {
-       //     print("Empty");
-        //}
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -59,24 +56,24 @@ class Evenement : UITableViewController, UISearchBarDelegate {
     func parseData(JSONData: Data)
     {
         do {
-            self.posts.removeAll()
+             self.posts.removeAll()
             var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as! JSONSTandard
-            if let tutos = readableJSON["Event"] as? [JSONSTandard]{
+            if let tutos = readableJSON["Actu"] as? [JSONSTandard]{
                 for i in 0..<tutos.count{
                     let tuto = tutos[i]
                     
                     print(tuto)
                     let name = tuto["FR_titre"] as! String
-                    let id = tuto["FR_youtube"] as! String
+                    let id = tuto["FR_accroche"] as! String
                     let contenu = tuto["FR_contenu"] as! String
                     
-                    if let images = readableJSON["Event"] as? [JSONSTandard]{
+                    if let images = readableJSON["Actu"] as? [JSONSTandard]{
                         let imageData = images[i]
                         let mainImageURL = URL(string: "https://myocosplay.eu" + (imageData["FR_cover_img"] as! String))
                         let mainImageData = NSData(contentsOf: mainImageURL!)
                         let mainImage = UIImage(data: mainImageData as! Data)
-                        
-                        posts.append(postEvent.init(mainImage: mainImage, name: name, id: id, contenu: contenu))
+                    
+                        posts.append(postNews.init(mainImage: mainImage, name: name, id: id, contenu: contenu))
                         
                         self.tableView.reloadData()
                     }
@@ -118,7 +115,7 @@ class Evenement : UITableViewController, UISearchBarDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let indexPath = self.tableView.indexPathForSelectedRow?.row
         
-        let vc = segue.destination as! EventVC
+        let vc = segue.destination as! NewsVC
         
         vc.image = posts[indexPath!].mainImage
         vc.mainSongTitle = posts[indexPath!].name
@@ -144,5 +141,6 @@ class Evenement : UITableViewController, UISearchBarDelegate {
     }
     
 }
+
 
 

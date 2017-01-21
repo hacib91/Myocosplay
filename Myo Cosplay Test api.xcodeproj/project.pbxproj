@@ -12,15 +12,20 @@
 		750E897E1DD7C75300CA1F0D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750E897D1DD7C75300CA1F0D /* Images.swift */; };
 		750E89821DD92A1600CA1F0D /* AudioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750E89811DD92A1600CA1F0D /* AudioVC.swift */; };
 		750FABEA1D3E7CFA0036950D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FABE81D3E7CFA0036950D /* SWRevealViewController.m */; };
+		75205C051E2D431B00A24C3F /* Boutique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75205C041E2D431B00A24C3F /* Boutique.swift */; };
+		75205C071E2D43FB00A24C3F /* BoutiqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75205C061E2D43FB00A24C3F /* BoutiqueVC.swift */; };
+		75205C091E2D4F5D00A24C3F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75205C081E2D4F5D00A24C3F /* Location.swift */; };
+		75205C0B1E2D4F6C00A24C3F /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75205C0A1E2D4F6C00A24C3F /* LocationVC.swift */; };
 		75378C061DF8BF7900973510 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75378C051DF8BF7900973510 /* VideoVC.swift */; };
 		753848EC1D22799700247C1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753848EB1D22799700247C1F /* AppDelegate.swift */; };
 		753848EE1D22799700247C1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753848ED1D22799700247C1F /* ViewController.swift */; };
 		753848F31D22799700247C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753848F21D22799700247C1F /* Assets.xcassets */; };
 		753848F61D22799700247C1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753848F41D22799700247C1F /* LaunchScreen.storyboard */; };
+		753FB1AD1E198A2B005DF77A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753FB1AC1E198A2B005DF77A /* Profile.swift */; };
 		754491DE1DE0A83700D39769 /* Tutos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754491DD1DE0A83700D39769 /* Tutos.swift */; };
 		754491E11DE0E6C300D39769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754491DF1DE0E6C300D39769 /* Main.storyboard */; };
+		755C5D921E340BAD00F4EDBF /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C5D911E340BAD00F4EDBF /* News.swift */; };
 		756472041DB4177400317620 /* Tuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756472031DB4177400317620 /* Tuto.swift */; };
-		7584CD8F1D469F8E00519EC3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584CD8E1D469F8E00519EC3 /* News.swift */; };
 		7584CD911D46B93A00519EC3 /* Evenement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584CD901D46B93A00519EC3 /* Evenement.swift */; };
 		7584CD931D477B1C00519EC3 /* Autres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584CD921D477B1C00519EC3 /* Autres.swift */; };
 		7584CD951D47EE8300519EC3 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584CD941D47EE8300519EC3 /* Start.swift */; };
@@ -28,6 +33,9 @@
 		75A3B2321DCBC3E70055DC6B /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3B2311DCBC3E70055DC6B /* Forum.swift */; };
 		75AA24C81DE4F85800536F20 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA24C71DE4F85800536F20 /* NewsVC.swift */; };
 		75ACE61E1DE73D2C0082B088 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ACE61D1DE73D2C0082B088 /* EventVC.swift */; };
+		75AF473A1E2A7BA900C6F43F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF47391E2A7BA900C6F43F /* UserViewController.swift */; };
+		75AF473C1E2A7D9800C6F43F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF473B1E2A7D9800C6F43F /* RegisterViewController.swift */; };
+		75AF473E1E2A7DA300C6F43F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF473D1E2A7DA300C6F43F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,10 @@
 		750FABE71D3E7CFA0036950D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		750FABE81D3E7CFA0036950D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		750FABE91D3E7CFA0036950D /* TodoApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TodoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		75205C041E2D431B00A24C3F /* Boutique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boutique.swift; sourceTree = "<group>"; };
+		75205C061E2D43FB00A24C3F /* BoutiqueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoutiqueVC.swift; sourceTree = "<group>"; };
+		75205C081E2D4F5D00A24C3F /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		75205C0A1E2D4F6C00A24C3F /* LocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		75378C051DF8BF7900973510 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		753848E81D22799600247C1F /* Myo Cosplay Test api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myo Cosplay Test api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753848EB1D22799700247C1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +58,11 @@
 		753848F21D22799700247C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753848F51D22799700247C1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753848F71D22799700247C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Myo Cosplay Test api/Info.plist"; sourceTree = "<group>"; };
+		753FB1AC1E198A2B005DF77A /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		754491DD1DE0A83700D39769 /* Tutos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutos.swift; sourceTree = "<group>"; };
 		754491E01DE0E6C300D39769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		755C5D911E340BAD00F4EDBF /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		756472031DB4177400317620 /* Tuto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuto.swift; sourceTree = "<group>"; };
-		7584CD8E1D469F8E00519EC3 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		7584CD901D46B93A00519EC3 /* Evenement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evenement.swift; sourceTree = "<group>"; };
 		7584CD921D477B1C00519EC3 /* Autres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autres.swift; sourceTree = "<group>"; };
 		7584CD941D47EE8300519EC3 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
@@ -57,6 +70,9 @@
 		75A3B2311DCBC3E70055DC6B /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		75AA24C71DE4F85800536F20 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		75ACE61D1DE73D2C0082B088 /* EventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		75AF47391E2A7BA900C6F43F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		75AF473B1E2A7D9800C6F43F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		75AF473D1E2A7DA300C6F43F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A46F4F095EC4927039F3CDE3 /* Pods-Myo Cosplay Test api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myo Cosplay Test api.release.xcconfig"; path = "Pods/Target Support Files/Pods-Myo Cosplay Test api/Pods-Myo Cosplay Test api.release.xcconfig"; sourceTree = "<group>"; };
 		B754E2E23951BE1B94C3D24F /* Pods-Myo Cosplay Test api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myo Cosplay Test api.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Myo Cosplay Test api/Pods-Myo Cosplay Test api.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +105,7 @@
 		753848DF1D22799600247C1F = {
 			isa = PBXGroup;
 			children = (
+				7597575B1E33DCD00066AB48 /* old files */,
 				753848EA1D22799700247C1F /* Myo Cosplay Test api */,
 				753848E91D22799600247C1F /* Products */,
 				9A029CAA90AE6B10C2C4D666 /* Pods */,
@@ -109,8 +126,16 @@
 			children = (
 				753848EB1D22799700247C1F /* AppDelegate.swift */,
 				753848ED1D22799700247C1F /* ViewController.swift */,
-				7584CD8E1D469F8E00519EC3 /* News.swift */,
+				75AF47391E2A7BA900C6F43F /* UserViewController.swift */,
+				75AF473B1E2A7D9800C6F43F /* RegisterViewController.swift */,
+				75AF473D1E2A7DA300C6F43F /* LoginViewController.swift */,
+				753FB1AC1E198A2B005DF77A /* Profile.swift */,
 				75AA24C71DE4F85800536F20 /* NewsVC.swift */,
+				75205C041E2D431B00A24C3F /* Boutique.swift */,
+				75205C061E2D43FB00A24C3F /* BoutiqueVC.swift */,
+				75205C081E2D4F5D00A24C3F /* Location.swift */,
+				75205C0A1E2D4F6C00A24C3F /* LocationVC.swift */,
+				755C5D911E340BAD00F4EDBF /* News.swift */,
 				756472031DB4177400317620 /* Tuto.swift */,
 				7584CD901D46B93A00519EC3 /* Evenement.swift */,
 				75ACE61D1DE73D2C0082B088 /* EventVC.swift */,
@@ -129,6 +154,13 @@
 				75378C051DF8BF7900973510 /* VideoVC.swift */,
 			);
 			path = "Myo Cosplay Test api";
+			sourceTree = "<group>";
+		};
+		7597575B1E33DCD00066AB48 /* old files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "old files";
 			sourceTree = "<group>";
 		};
 		94DB76674A968148F6374998 /* Frameworks */ = {
@@ -178,7 +210,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "haseeb khalid";
 				TargetAttributes = {
 					753848E71D22799600247C1F = {
@@ -272,23 +304,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AF473E1E2A7DA300C6F43F /* LoginViewController.swift in Sources */,
+				75205C051E2D431B00A24C3F /* Boutique.swift in Sources */,
 				753848EE1D22799700247C1F /* ViewController.swift in Sources */,
 				753848EC1D22799700247C1F /* AppDelegate.swift in Sources */,
+				75205C071E2D43FB00A24C3F /* BoutiqueVC.swift in Sources */,
 				750589A31D2FF17100D15D59 /* AddViewController.swift in Sources */,
 				75378C061DF8BF7900973510 /* VideoVC.swift in Sources */,
 				75AA24C81DE4F85800536F20 /* NewsVC.swift in Sources */,
 				750E897E1DD7C75300CA1F0D /* Images.swift in Sources */,
 				7584CD911D46B93A00519EC3 /* Evenement.swift in Sources */,
+				75205C091E2D4F5D00A24C3F /* Location.swift in Sources */,
+				753FB1AD1E198A2B005DF77A /* Profile.swift in Sources */,
 				756472041DB4177400317620 /* Tuto.swift in Sources */,
 				754491DE1DE0A83700D39769 /* Tutos.swift in Sources */,
 				7584CD951D47EE8300519EC3 /* Start.swift in Sources */,
+				75205C0B1E2D4F6C00A24C3F /* LocationVC.swift in Sources */,
+				75AF473C1E2A7D9800C6F43F /* RegisterViewController.swift in Sources */,
 				750E89821DD92A1600CA1F0D /* AudioVC.swift in Sources */,
-				7584CD8F1D469F8E00519EC3 /* News.swift in Sources */,
 				750FABEA1D3E7CFA0036950D /* SWRevealViewController.m in Sources */,
 				75ACE61E1DE73D2C0082B088 /* EventVC.swift in Sources */,
 				759DE8C51DF708AB003D3728 /* Video.swift in Sources */,
 				7584CD931D477B1C00519EC3 /* Autres.swift in Sources */,
 				75A3B2321DCBC3E70055DC6B /* Forum.swift in Sources */,
+				755C5D921E340BAD00F4EDBF /* News.swift in Sources */,
+				75AF473A1E2A7BA900C6F43F /* UserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

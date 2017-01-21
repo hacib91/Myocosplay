@@ -1,47 +1,32 @@
 //
-//  Evenement.swift
+//  Profile.swift
 //  Myo Cosplay Test api
 //
-//  Created by haseeb khalid on 25/07/2016.
-//  Copyright © 2016 haseeb khalid. All rights reserved.
+//  Created by haseeb khalid on 01/01/2017.
+//  Copyright © 2017 haseeb khalid. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import Kingfisher
 
-struct postEvent {
+struct postProfile {
     // let urlImage : URL!
-    let mainImage : UIImage!
+    //let mainImage : UIImage!
     let name : String!
     let id : String!
     let contenu : String
 }
 
-class Evenement : UITableViewController, UISearchBarDelegate {
+class Profile : UITableViewController, UISearchBarDelegate {
     
-    @IBOutlet weak var searchBar: UISearchBar!
-    var posts = [postEvent]()
-    var searchURL = "https://myocosplayeip.herokuapp.com/event"
-    var searchNewURL = String()
+    var posts = [postProfile]()
+    var searchURL = "http://localhost:8080/login"
+
     
     typealias JSONSTandard = [String : AnyObject]
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar, textDidChange searchText:String) {
-        let keywords = searchBar.text
-        
-        let finalKeywords = keywords?.replacingOccurrences(of: " ", with: "%20")
-        
-        
-        searchNewURL = "https://myocosplayeip.herokuapp.com/event/titre/\(finalKeywords!)/"
-        callAlamo(url: searchNewURL)
-        self.view.endEditing(true)
-        self.tableView.reloadData()
-        
-     //   if searchText.isEmpty == true {
-       //     print("Empty");
-        //}
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,7 +34,13 @@ class Evenement : UITableViewController, UISearchBarDelegate {
     }
     
     func callAlamo(url : String) {
-        Alamofire.request(url).responseJSON(completionHandler: {
+        
+        let myParam: Parameters = [
+            "username": "hacib",
+            "password": "france"
+            
+        ]
+        Alamofire.request(url, method: .post, parameters: myParam).responseJSON(completionHandler: {
             reponse in
             self.parseData(JSONData: reponse.data!)
             self.tableView.reloadData()
@@ -61,25 +52,18 @@ class Evenement : UITableViewController, UISearchBarDelegate {
         do {
             self.posts.removeAll()
             var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as! JSONSTandard
-            if let tutos = readableJSON["Event"] as? [JSONSTandard]{
+            if let tutos = readableJSON["Users"] as? [JSONSTandard]{
                 for i in 0..<tutos.count{
                     let tuto = tutos[i]
                     
                     print(tuto)
-                    let name = tuto["FR_titre"] as! String
-                    let id = tuto["FR_youtube"] as! String
-                    let contenu = tuto["FR_contenu"] as! String
+                    let name = tuto["nom"] as! String
+                    let id = tuto["login"] as! String
+                    let contenu = tuto["email"] as! String
+                    posts.append(postProfile.init( name: name, id: id, contenu: contenu))
                     
-                    if let images = readableJSON["Event"] as? [JSONSTandard]{
-                        let imageData = images[i]
-                        let mainImageURL = URL(string: "https://myocosplay.eu" + (imageData["FR_cover_img"] as! String))
-                        let mainImageData = NSData(contentsOf: mainImageURL!)
-                        let mainImage = UIImage(data: mainImageData as! Data)
-                        
-                        posts.append(postEvent.init(mainImage: mainImage, name: name, id: id, contenu: contenu))
-                        
-                        self.tableView.reloadData()
-                    }
+                    self.tableView.reloadData()
+                    
                 }
             }
             // print(readableJSON)
@@ -96,9 +80,9 @@ class Evenement : UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        let mainImageView = cell?.viewWithTag(2) as! UIImageView
+       // let mainImageView = cell?.viewWithTag(2) as! UIImageView
         
-        mainImageView.image = posts[indexPath.row].mainImage
+        //mainImageView.image = posts[indexPath.row].mainImage
         //mainImageView.kf.setImage(with: posts[indexPath.row].urlImage)
         
         let mainLabel = cell?.viewWithTag(1) as! UILabel
@@ -120,7 +104,7 @@ class Evenement : UITableViewController, UISearchBarDelegate {
         
         let vc = segue.destination as! EventVC
         
-        vc.image = posts[indexPath!].mainImage
+       // vc.image = posts[indexPath!].mainImage
         vc.mainSongTitle = posts[indexPath!].name
         vc.mainContenu = posts[indexPath!].contenu
     }
@@ -144,5 +128,6 @@ class Evenement : UITableViewController, UISearchBarDelegate {
     }
     
 }
+
 
 

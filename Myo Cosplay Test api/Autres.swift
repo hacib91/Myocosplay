@@ -30,7 +30,7 @@ class Autres : UITableViewController {
         cell?.textLabel?.text = names[(indexPath as NSIndexPath).row]
         cel?.textLabel?.text = n[(indexPath as NSIndexPath).row]
         return cell!
-        return cel!
+        //return cel!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
